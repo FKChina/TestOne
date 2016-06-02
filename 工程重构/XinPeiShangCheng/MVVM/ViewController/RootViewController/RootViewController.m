@@ -50,7 +50,10 @@
 //数据处理
 #pragma mark
 #pragma mark -Data
-
+-(void)test
+{
+    NSLog(@"adsasdfasf");
+}
 //逻辑功能
 #pragma mark
 #pragma mark -Function
