@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="KGk-i7-Jjw" customClass="TaoCanCell">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="418" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKL-Kj-p6x">
+                        <rect key="frame" x="10" y="10" width="70" height="49.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="X5M-Rr-cVV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="1" green="0.71257411739999998" blue="0.30227779100000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fc3-cw-cGO">
+                        <rect key="frame" x="88" y="10" width="70" height="49.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xSy-3B-Ujd">
+                        <rect key="frame" x="383" y="22.5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="EEO-xg-ZQb"/>
+                            <constraint firstAttribute="width" constant="25" id="IaE-gj-yuY"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="xSy-3B-Ujd" secondAttribute="trailing" constant="2" id="Jrn-W7-xSx"/>
+                    <constraint firstItem="fc3-cw-cGO" firstAttribute="width" secondItem="GKL-Kj-p6x" secondAttribute="width" id="PcM-uS-ypU"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="GKL-Kj-p6x" secondAttribute="bottom" constant="2" id="Sf6-eP-ZBN"/>
+                    <constraint firstItem="fc3-cw-cGO" firstAttribute="leading" secondItem="GKL-Kj-p6x" secondAttribute="trailing" constant="8" id="Uzw-g9-xrl"/>
+                    <constraint firstItem="fc3-cw-cGO" firstAttribute="top" secondItem="GKL-Kj-p6x" secondAttribute="top" id="WUx-9b-tL1"/>
+                    <constraint firstAttribute="topMargin" secondItem="GKL-Kj-p6x" secondAttribute="top" constant="-2" id="hbd-B3-zQG"/>
+                    <constraint firstItem="fc3-cw-cGO" firstAttribute="height" secondItem="GKL-Kj-p6x" secondAttribute="height" id="nC1-zC-COl"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="GKL-Kj-p6x" secondAttribute="leading" constant="-2" id="o9J-nB-ppK"/>
+                    <constraint firstItem="xSy-3B-Ujd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oVa-bw-RgZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="taoCan" destination="GKL-Kj-p6x" id="EB8-Jn-zTs"/>
+                <outlet property="taoCanImage" destination="xSy-3B-Ujd" id="3nH-mj-bls"/>
+                <outlet property="taoCanPrice" destination="fc3-cw-cGO" id="eTH-HK-gyX"/>
+            </connections>
+            <point key="canvasLocation" x="279" y="333.5"/>
+        </tableViewCell>
+    </objects>
+</document>

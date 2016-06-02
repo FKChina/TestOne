@@ -1,0 +1,46 @@
+//
+//  XinPeiPCH.pch
+//  XinPei
+//
+//  Created by 醉卧沙场君莫笑 on 16/3/21.
+//  Copyright © 2016年 glory.js.com. All rights reserved.
+//
+
+#ifndef XinPeiPCH_pch
+#define XinPeiPCH_pch
+
+
+
+//自定义标识
+#import "Config.h"
+
+#import "AppDelegate.h"
+
+//控制器
+#import "Controllers.h"
+//模型
+#import "JSModelKu.h"
+//cellAndView
+#import "ViewAndCell.h"
+//网络请求
+#import "NET.h"
+//Helper
+#import "AllHelpers.h"
+//第三方库
+#import "JSAllThirdParty.h"
+
+#import "JSNavigationController.h"
+
+
+#import "WHButton.h"
+#import "WHTextField.h"
+#import "WHView.h"
+#import "XPJudgePhoneNumber.h"
+#import "AFNetworking.h"
+#import "WHNetWorking.h"
+#import "TimeCalculator.h"
+#import "WHAlertController.h"
+#import "MBProgressHUD+MJ.h"
+
+
+#endif
